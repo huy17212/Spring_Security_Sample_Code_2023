@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+import org.springframework.data.repository.Repository;
+
+import com.example.demo.entity.AppUser;
+
+public interface UserRoleRepository extends Repository<UserRole, Long> {
+	AppUser findByUserName(String username);
+}
